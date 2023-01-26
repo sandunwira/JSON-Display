@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>Skirts</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="/style.css">
+	
+	<script>
+		// Use fetch to get the JSON data
+		fetch('/json/women/skirts.json')
+			.then(response => response.json())
+			.then(data => {
+				// Get the container element
+				let container = document.getElementById('data-container');
+				let htmlData = '';
+				// Loop through the data array
+				for (let i = 0; i < data.length; i++) {
+					htmlData += '<p>' + data[i].name + '</p>';
+					htmlData += '<img src="' + data[i].img + '" alt="' + data[i].img_alt + '">';
+					htmlData += '<p>Amazon Price: ' + data[i].amazon_pr + ' <a href="' + data[i].amazon_url + '">URL <i class="fa-solid fa-up-right-from-square"></i></a>' + '</p>';
+					htmlData += '<p>eBay Price: ' + data[i].ebay_pr + ' <a href="' + data[i].ebay_url + '">URL <i class="fa-solid fa-up-right-from-square"></i></a>' + '</p>';
+					htmlData += '<p>AliExpress Price: ' + data[i].ali_pr + ' <a href="' + data[i].ali_url + '">URL <i class="fa-solid fa-up-right-from-square"></i></a>' + '</p>';
+					htmlData += '<br>';
+				}
+				// Insert the HTML into the container
+				container.innerHTML = htmlData;
+			});
+	</script>
+	
+</head>
+
+<body>
+	<div id="data-container"></div>
+</body>
+
+</html>

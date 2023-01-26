@@ -1,0 +1,53 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Prompt", sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+img{
+	width: 250px;
+}
+
+button {
+  margin: 5px 0px;
+  padding: 7px 15px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  scale: 1.05;
+  color: #fff;
+  background: #1f59ec;
+  border: 2px solid #1f59ec;
+  box-shadow: 0 0 5px #42424290;
+  transition: 0.5s;
+}
+
+.ali button{
+	color: #FF6A00;
+}
+.ali button:hover{
+	color: #FFF;
+}
+.ebay button{
+	color: #93c5fb;
+}
+.ebay button:hover{
+	color: #FFF;
+}
+.amazon button{
+	color: #FF9900;
+}
+.amazon button:hover{
+	color: #FFF;
+}

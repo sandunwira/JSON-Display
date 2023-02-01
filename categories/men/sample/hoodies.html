@@ -1,43 +1,27 @@
-<!DOCTYPE html>
 <html>
 
 <head>
 
-	<title>Hoodies</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<title>Hoodies - Men's Clothing | Koo-Lo</title>
+
+	<!-- ===== Fontawesome CDN Link ===== -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="stylesheet" href="/style.css">
 
-	<script>
-		// Use fetch to get the JSON data
-		fetch('/json/men/hoodies.json')
-			.then(response => response.json())
-			.then(data => {
-				// Get the container element
-				let container = document.getElementById('data-container');
-				let htmlData = '';
-				// Loop through the data array
-				for (let i = 0; i < data.length; i++) {
-					htmlData += '<img src="' + data[i].img + '" alt="' + data[i].name + '">';
-					htmlData += '<p>' + data[i].name + '</p>';
-					htmlData += '<br>';
-					htmlData += '<a href="' + data[i].amazon_url + '"><button>' + data[i].amazon_pr + ' on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
-					htmlData += '<br>';
-					htmlData += '<a href="' + data[i].ebay_url + '"><button>' + data[i].ebay_pr + ' on <span class="ebay">eBay <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
-					htmlData += '<br>';
-					htmlData += '<a href="' + data[i].ali_url + '"><button>' + data[i].ali_pr + ' on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
-					htmlData += '<br>';
-					htmlData += '<br>';
-				}
-				// Insert the HTML into the container
-				container.innerHTML = htmlData;
-			});
-	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="hoodies.css">
+	<link rel="icon" href="https://i.postimg.cc/HLNdd1Tv/favicon.webp">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" as="font" type="font/ttf"
+		crossorigin>
 
 </head>
 
 <body>
-
 
 
 	<!------------------------------------------------------ products-row Start -->
@@ -54,7 +38,8 @@
 				<div class="details">
 					<h2>3D American USA Eagle Hoodie<br>
 						<a href="https://www.aliexpress.us/item/3256802257003915.html" target="_blank" rel="noreferrer">
-							<button>$3.60 on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$3.60 on <span class="ali">AliExpress <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 					</h2>
 					<div class="data">
@@ -62,7 +47,8 @@
 					</div>
 					<div class="actionbtn">
 						<a href="https://amzn.to/3GTuwpT" target="_blank" rel="noreferrer">
-							<button>$25.99 on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$25.99 on <span class="amazon">Amazon <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 						<button class="hidden-btn">$0 on <span class="ebay">eBay</span></button>
 					</div>
@@ -79,7 +65,8 @@
 				<div class="details">
 					<h2>Anime Luffy Zoro Cartoon Hoodie<br>
 						<a href="https://www.aliexpress.us/item/3256804402045519.html" target="_blank" rel="noreferrer">
-							<button>$9.45 on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$9.45 on <span class="ali">AliExpress <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 					</h2>
 					<div class="data">
@@ -87,7 +74,8 @@
 					</div>
 					<div class="actionbtn">
 						<a href="https://amzn.to/3whccCb" target="_blank" rel="noreferrer">
-							<button>$28.99 on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$28.99 on <span class="amazon">Amazon <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 						<button class="hidden-btn">$0 on <span class="ebay">eBay</span></button>
 					</div>
@@ -103,7 +91,8 @@
 				<div class="details">
 					<h2>Babioboa Men's Workout Hoodie<br>
 						<a href="https://amzn.to/3GWPnbJ" target="_blank" rel="noreferrer">
-							<button>$15.49 on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$15.49 on <span class="amazon">Amazon <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 					</h2>
 					<div class="data">
@@ -111,7 +100,8 @@
 					</div>
 					<div class="actionbtn">
 						<a href="https://www.aliexpress.us/item/3256804578127094.html" target="_blank" rel="noreferrer">
-							<button>$15.78 on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$15.78 on <span class="ali">AliExpress <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 						<button class="hidden-btn">$0 on <span class="ebay">eBay</span></button>
 					</div>
@@ -128,7 +118,8 @@
 				<div class="details">
 					<h2>Casual 3D Printed Long Sleeve Hoodie<br>
 						<a href="https://www.aliexpress.us/item/3256801225364630.html" target="_blank" rel="noreferrer">
-							<button>$12.13 on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$12.13 on <span class="ali">AliExpress <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 					</h2>
 					<div class="data">
@@ -136,7 +127,8 @@
 					</div>
 					<div class="actionbtn">
 						<a href="https://amzn.to/3ZUkQnu" target="_blank" rel="noreferrer">
-							<button>$15.96 on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$15.96 on <span class="amazon">Amazon <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 						<button class="hidden-btn">$0 on <span class="ebay">eBay</span></button>
 					</div>
@@ -146,16 +138,6 @@
 	</div>
 
 
-	<!-- products-row End -------------------------------------------------------->
-
-
-	<div class="data-container" id="data-container"></div>
-
-
-
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js'></script>
-	<script src="/script.js"></script>
 
 </body>
 

@@ -6,6 +6,8 @@
 
 html{
 	scroll-behavior: smooth;
+	background: #242424;
+	color: #fff;
 }
 
 img{
@@ -33,21 +35,28 @@ button:hover {
   transition: 0.5s;
 }
 
-.ali button{
+.ali{
 	color: #FF6A00;
+	transition: 0.5s;
 }
-.ali button:hover{
+button:hover .ali{
 	color: #FFF;
+	transition: 0.5s;
 }
-.ebay button{
+.ebay{
 	color: #93c5fb;
+	transition: 0.5s;
 }
-.ebay button:hover{
+button:hover .ebay{
 	color: #FFF;
+	transition: 0.5s;
 }
-.amazon button{
+.amazon{
 	color: #FF9900;
+	transition: 0.5s;
 }
-.amazon button:hover{
+button:hover .amazon{
 	color: #FFF;
+	transition: 0.5s;
 }
+

@@ -6,7 +6,7 @@
 	<title>Hoodies</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="sample/hoodies.css">
 
 	<script>
 		// Use fetch to get the JSON data
@@ -18,16 +18,47 @@
 				let htmlData = '';
 				// Loop through the data array
 				for (let i = 0; i < data.length; i++) {
-					htmlData += '<img src="' + data[i].img + '" alt="' + data[i].name + '">';
-					htmlData += '<p>' + data[i].name + '</p>';
+					htmlData += '<div class="products-row"><div class="products-card">';
+					htmlData += '<div class="imgBx"><img src="' + data[i].img1 + '" alt="' + data[i].name1 + '"></div>';
+					htmlData += '<div class="content"><div class="details"><h2>' + data[i].name1 + '<br>';
+					htmlData += '<a href="' + data[i].amazon_url1 + '" target="_blank"><button>' + data[i].amazon_pr1 + ' on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button></a></h2>';
+					htmlData += '<div class="data"><h3>MORE DEALS</h3></div><div class="actionbtn">';
+					htmlData += '<a href="' + data[i].ebay_url1 + '" target="_blank"><button>' + data[i].ebay_pr1 + ' on <span class="ebay">eBay <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
 					htmlData += '<br>';
-					htmlData += '<a href="' + data[i].amazon_url + '"><button>' + data[i].amazon_pr + ' on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
+					htmlData += '<a href="' + data[i].ali_url1 + '" target="_blank"><button>' + data[i].ali_pr1 + ' on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
+					htmlData += '</div></div></div></div>';
+
+					htmlData += '<div class="products-card">';
+					htmlData += '<div class="imgBx"><img src="' + data[i].img2 + '" alt="' + data[i].name2 + '"></div>';
+					htmlData += '<div class="content"><div class="details"><h2>' + data[i].name2 + '<br>';
+					htmlData += '<a href="' + data[i].amazon_url2 + '" target="_blank"><button>' + data[i].amazon_pr2 + ' on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button></a></h2>';
+					htmlData += '<div class="data"><h3>MORE DEALS</h3></div><div class="actionbtn">';
+					htmlData += '<a href="' + data[i].ebay_url2 + '" target="_blank"><button>' + data[i].ebay_pr2 + ' on <span class="ebay">eBay <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
 					htmlData += '<br>';
-					htmlData += '<a href="' + data[i].ebay_url + '"><button>' + data[i].ebay_pr + ' on <span class="ebay">eBay <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
+					htmlData += '<a href="' + data[i].ali_url2 + '" target="_blank"><button>' + data[i].ali_pr2 + ' on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
+					htmlData += '</div></div></div></div>';
+
+
+					htmlData += '<div class="products-card">';
+					htmlData += '<div class="imgBx"><img src="' + data[i].img3 + '" alt="' + data[i].name3 + '"></div>';
+					htmlData += '<div class="content"><div class="details"><h2>' + data[i].name3 + '<br>';
+					htmlData += '<a href="' + data[i].amazon_url3 + '" target="_blank"><button>' + data[i].amazon_pr3 + ' on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button></a></h2>';
+					htmlData += '<div class="data"><h3>MORE DEALS</h3></div><div class="actionbtn">';
+					htmlData += '<a href="' + data[i].ebay_url3 + '" target="_blank"><button>' + data[i].ebay_pr3 + ' on <span class="ebay">eBay <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
 					htmlData += '<br>';
-					htmlData += '<a href="' + data[i].ali_url + '"><button>' + data[i].ali_pr + ' on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
+					htmlData += '<a href="' + data[i].ali_url3 + '" target="_blank"><button>' + data[i].ali_pr3 + ' on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
+					htmlData += '</div></div></div></div>';
+
+
+					htmlData += '<div class="products-card">';
+					htmlData += '<div class="imgBx"><img src="' + data[i].img4 + '" alt="' + data[i].name4 + '"></div>';
+					htmlData += '<div class="content"><div class="details"><h2>' + data[i].name4 + '<br>';
+					htmlData += '<a href="' + data[i].amazon_url4 + '" target="_blank"><button>' + data[i].amazon_pr4 + ' on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button></a></h2>';
+					htmlData += '<div class="data"><h3>MORE DEALS</h3></div><div class="actionbtn">';
+					htmlData += '<a href="' + data[i].ebay_url4 + '" target="_blank"><button>' + data[i].ebay_pr4 + ' on <span class="ebay">eBay <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
 					htmlData += '<br>';
-					htmlData += '<br>';
+					htmlData += '<a href="' + data[i].ali_url4 + '" target="_blank"><button>' + data[i].ali_pr4 + ' on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button></a>';
+					htmlData += '</div></div></div></div></div>';
 				}
 				// Insert the HTML into the container
 				container.innerHTML = htmlData;
@@ -54,7 +85,8 @@
 				<div class="details">
 					<h2>3D American USA Eagle Hoodie<br>
 						<a href="https://www.aliexpress.us/item/3256802257003915.html" target="_blank" rel="noreferrer">
-							<button>$3.60 on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$3.60 on <span class="ali">AliExpress <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 					</h2>
 					<div class="data">
@@ -62,7 +94,8 @@
 					</div>
 					<div class="actionbtn">
 						<a href="https://amzn.to/3GTuwpT" target="_blank" rel="noreferrer">
-							<button>$25.99 on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$25.99 on <span class="amazon">Amazon <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 						<button class="hidden-btn">$0 on <span class="ebay">eBay</span></button>
 					</div>
@@ -79,7 +112,8 @@
 				<div class="details">
 					<h2>Anime Luffy Zoro Cartoon Hoodie<br>
 						<a href="https://www.aliexpress.us/item/3256804402045519.html" target="_blank" rel="noreferrer">
-							<button>$9.45 on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$9.45 on <span class="ali">AliExpress <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 					</h2>
 					<div class="data">
@@ -87,7 +121,8 @@
 					</div>
 					<div class="actionbtn">
 						<a href="https://amzn.to/3whccCb" target="_blank" rel="noreferrer">
-							<button>$28.99 on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$28.99 on <span class="amazon">Amazon <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 						<button class="hidden-btn">$0 on <span class="ebay">eBay</span></button>
 					</div>
@@ -103,7 +138,8 @@
 				<div class="details">
 					<h2>Babioboa Men's Workout Hoodie<br>
 						<a href="https://amzn.to/3GWPnbJ" target="_blank" rel="noreferrer">
-							<button>$15.49 on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$15.49 on <span class="amazon">Amazon <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 					</h2>
 					<div class="data">
@@ -111,7 +147,8 @@
 					</div>
 					<div class="actionbtn">
 						<a href="https://www.aliexpress.us/item/3256804578127094.html" target="_blank" rel="noreferrer">
-							<button>$15.78 on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$15.78 on <span class="ali">AliExpress <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 						<button class="hidden-btn">$0 on <span class="ebay">eBay</span></button>
 					</div>
@@ -128,7 +165,8 @@
 				<div class="details">
 					<h2>Casual 3D Printed Long Sleeve Hoodie<br>
 						<a href="https://www.aliexpress.us/item/3256801225364630.html" target="_blank" rel="noreferrer">
-							<button>$12.13 on <span class="ali">AliExpress <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$12.13 on <span class="ali">AliExpress <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 					</h2>
 					<div class="data">
@@ -136,7 +174,8 @@
 					</div>
 					<div class="actionbtn">
 						<a href="https://amzn.to/3ZUkQnu" target="_blank" rel="noreferrer">
-							<button>$15.96 on <span class="amazon">Amazon <i class="fa-solid fa-up-right-from-square"></i></span></button>
+							<button>$15.96 on <span class="amazon">Amazon <i
+										class="fa-solid fa-up-right-from-square"></i></span></button>
 						</a>
 						<button class="hidden-btn">$0 on <span class="ebay">eBay</span></button>
 					</div>
